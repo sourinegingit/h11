@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            margin: 2rem auto;
+            width: 30%;
+            padding: 0.5rem;
+            height: auto;
+            background-color: #fcedff;
+            border: 1px solid rgb(128, 87, 0);
+
+        }
+
+        div,
+        hr {
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="container">
+            <div>
+                <label for="shape">shapes:</label>
+                <select id="shape">
+                    <option selected value="rec">ReactAngle</option>
+                    <option value="sqr">Square</option>
+                    <option value="cir">Circle</option>
+                    <option value="lin">Cylindrical</option>
+                </select>
+            </div>
+            <div>
+                <label for="radius">Radius: </label>
+                <input type="text" id="radius">
+            </div>
+            <div>
+                <label for="width">Width: </label>
+                <input type="text" id="width">
+            </div>
+            <div>
+                <label for="height">Height: </label>
+                <input type="text" id="height">
+            </div>
+            <hr>
+            <div>
+                <span>Perimeter:</span>
+                <span id="perimeter"></span>
+            </div>
+            <div>
+                <span>Area:</span>
+                <span id="area"></span>
+            </div>
+        </div>
+        <button type="submit" id="submit" onsubmit="sub()">click</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
